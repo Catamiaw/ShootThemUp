@@ -19,6 +19,23 @@ public class PlayerMouvement : MonoBehaviour {
 
 		// 4 - Calcul du mouvement
 		movement = new Vector2(speed.x * inputX,speed.y * inputY);
+
+
+		// 5 - Tir
+		bool shoot = Input.GetButtonDown("Fire1");
+		shoot |= Input.GetButtonDown("Fire2");
+		// Astuce pour ceux sous Mac car Ctrl + flèches est utilisé par le système
+
+		if (shoot)
+		{
+			WeaponScript weapon = GetComponent<WeaponScript>();
+			if (weapon != null)
+			{
+				// false : le joueur n'est pas un ennemi
+				weapon.Attack(false);
+			}
+		}
+
 	}
 
 	void FixedUpdate()
