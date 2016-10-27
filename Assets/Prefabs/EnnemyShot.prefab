@@ -23,7 +23,6 @@ GameObject:
   - 50: {fileID: 50000013465662286}
   - 61: {fileID: 61000010211337694}
   - 114: {fileID: 114000012174721864}
-  - 114: {fileID: 114000011345115660}
   m_Layer: 0
   m_Name: EnnemyShot
   m_TagString: Untagged
@@ -75,19 +74,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 0.7}
---- !u!114 &114000011345115660
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010617991438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a130ecd70b52eb4ea8a492b2a7145f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: {x: 200, y: 200}
-  direction: {x: 1, y: 0}
 --- !u!114 &114000012174721864
 MonoBehaviour:
   m_ObjectHideFlags: 1
